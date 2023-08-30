@@ -1,0 +1,17 @@
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\bin\Debug\net6.0\OldCarShowroom.Services.deps.json
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\bin\Debug\net6.0\OldCarShowroom.Services.runtimeconfig.json
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\bin\Debug\net6.0\OldCarShowroom.Services.dll
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\bin\Debug\net6.0\OldCarShowroom.Services.pdb
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\obj\Debug\net6.0\OldCarShowroom.Services.csproj.AssemblyReference.cache
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\obj\Debug\net6.0\OldCarShowroom.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\obj\Debug\net6.0\OldCarShowroom.Services.AssemblyInfoInputs.cache
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\obj\Debug\net6.0\OldCarShowroom.Services.AssemblyInfo.cs
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\obj\Debug\net6.0\OldCarShowroom.Services.csproj.CoreCompileInputs.cache
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\obj\Debug\net6.0\OldCarShowroom.Services.dll
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\obj\Debug\net6.0\refint\OldCarShowroom.Services.dll
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\obj\Debug\net6.0\OldCarShowroom.Services.pdb
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\obj\Debug\net6.0\OldCarShowroom.Services.genruntimeconfig.cache
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\obj\Debug\net6.0\ref\OldCarShowroom.Services.dll
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\bin\Debug\net6.0\OldCarShowroom.Models.dll
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\bin\Debug\net6.0\OldCarShowroom.Models.pdb
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Services\obj\Debug\net6.0\OldCarShowroom.Services.csproj.CopyComplete

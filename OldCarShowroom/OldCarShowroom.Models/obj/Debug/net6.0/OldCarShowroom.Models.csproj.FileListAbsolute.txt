@@ -1,0 +1,14 @@
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\bin\Debug\net6.0\OldCarShowroom.Models.deps.json
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\bin\Debug\net6.0\OldCarShowroom.Models.runtimeconfig.json
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\bin\Debug\net6.0\OldCarShowroom.Models.dll
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\bin\Debug\net6.0\OldCarShowroom.Models.pdb
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\obj\Debug\net6.0\OldCarShowroom.Models.csproj.AssemblyReference.cache
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\obj\Debug\net6.0\OldCarShowroom.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\obj\Debug\net6.0\OldCarShowroom.Models.AssemblyInfoInputs.cache
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\obj\Debug\net6.0\OldCarShowroom.Models.AssemblyInfo.cs
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\obj\Debug\net6.0\OldCarShowroom.Models.csproj.CoreCompileInputs.cache
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\obj\Debug\net6.0\OldCarShowroom.Models.dll
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\obj\Debug\net6.0\refint\OldCarShowroom.Models.dll
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\obj\Debug\net6.0\OldCarShowroom.Models.pdb
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\obj\Debug\net6.0\OldCarShowroom.Models.genruntimeconfig.cache
+D:\.Programming\Old_Car_Showroom(Remake)\be\OldCarShowroom\OldCarShowroom.Models\obj\Debug\net6.0\ref\OldCarShowroom.Models.dll
