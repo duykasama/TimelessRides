@@ -9,7 +9,7 @@ namespace OldCarShowroom.Service.Services.Interfaces
 {
     public interface IPostService
     {
-        Task<IEnumerable<Post>> GetPostsAsync();
+        Task<IEnumerable<Post>> GetPostsAsync(int pageSize, int offset);
         Task<Post?> GetPostByIdAsync(string id);
         Task<IEnumerable<Post>> GetPostsByClientAsync(Client client);
         Task<IEnumerable<Post>> GetPrioritizedPostsAsync(int count);

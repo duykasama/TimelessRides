@@ -15,9 +15,9 @@ namespace OldCarShowroom.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetPosts()
+        public async Task<IActionResult> GetPosts(int pageSize, int offset)
         {
-            var result = await _postService.GetPostsAsync();
+            var result = await _postService.GetPostsAsync(pageSize, offset);
             return Ok(result);
         }
 
@@ -25,7 +25,7 @@ namespace OldCarShowroom.Api.Controllers
         [Route("prioritized")]
         public async Task<IActionResult> GetPrioritizedPosts()
         {
-            var result = await _postService.GetPrioritizedPostsAsync(10);
+            var result = await _postService.GetPrioritizedPostsAsync(9);
             return Ok(result);
         }
     }

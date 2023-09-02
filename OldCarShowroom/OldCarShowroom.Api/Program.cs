@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json;
 using OldCarShowroom.Service.Models;
 using OldCarShowroom.Service.Services;
 using OldCarShowroom.Service.Services.Interfaces;
@@ -16,6 +17,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddControllers().AddNewtonsoftJson(options =>
+{
+    options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+});
 
 builder.Services.AddScoped<IPostService, PostService>();
 builder.Services.AddScoped<OldCarShowroomContext>();
