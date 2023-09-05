@@ -28,5 +28,12 @@ namespace OldCarShowroom.Api.Controllers
             var result = await _postService.GetPrioritizedPostsAsync(9);
             return Ok(result);
         }
+
+        [HttpGet]
+        [Route("last-page")]
+        public async Task<IActionResult> GetLastPage(int pageSize)
+        {
+            return Ok(Math.Ceiling(await _postService.GetLastPage() / (decimal)pageSize));
+        }
     }
 }

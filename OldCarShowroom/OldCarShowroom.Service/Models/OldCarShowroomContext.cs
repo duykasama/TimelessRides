@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -52,8 +53,24 @@ public partial class OldCarShowroomContext : DbContext
         return config["ConnectionStrings:DefaultConnection"] ?? throw new Exception("Connection String not found");
     }
 
+    public static SqlConnectionStringBuilder NewSqlServerTCPConnectionString()
+    {
+        var connetionString = new SqlConnectionStringBuilder()
+        {
+            DataSource = Environment.GetEnvironmentVariable("DATA_SOURCE", EnvironmentVariableTarget.Machine),
+            UserID = Environment.GetEnvironmentVariable("USER_ID", EnvironmentVariableTarget.Machine),
+            Password = Environment.GetEnvironmentVariable("PASSWORD", EnvironmentVariableTarget.Machine),
+            InitialCatalog = Environment.GetEnvironmentVariable("INITIAL_CATALOG", EnvironmentVariableTarget.Machine),
+            Encrypt = false
+        };
+        connetionString.Pooling = true;
+
+        return connetionString;
+    }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer(GetConnectionString());
+        => optionsBuilder.UseSqlServer(NewSqlServerTCPConnectionString().ToString());
+        //=> optionsBuilder.UseSqlServer(GetConnectionString());
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
