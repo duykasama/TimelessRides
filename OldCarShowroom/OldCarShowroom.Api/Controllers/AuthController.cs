@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using OldCarShowroom.Api.Models;
+using OldCarShowroom.Service.Services.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -13,22 +14,25 @@ namespace OldCarShowroom.Api.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IConfiguration _config;
+        private readonly IClientService _clientService;
 
-        public AuthController(IConfiguration config)
+        public AuthController(IConfiguration config, IClientService clientService)
         {
             _config = config;
+            _clientService = clientService;
         }
 
 
         [HttpPost]
-        public IActionResult GetToken([FromForm] string email, [FromForm] string password)
+        [Route("login")]
+        public async Task<IActionResult> Login([FromForm] string email, [FromForm] string password)
         {
             var userLogin = new UserLogin
             {
                 Email = email,
                 Password = password
             };
-            var user = Authenticate(userLogin);
+            var user = await Authenticate(userLogin);
 
             if (user is not null)
             {
@@ -36,19 +40,19 @@ namespace OldCarShowroom.Api.Controllers
                 return Ok(token);
             }
 
-            return Unauthorized("User does not exist");
+            return Unauthorized("Wrong user name or password");
         }
 
-        private User? Authenticate(UserLogin userLogin)
+        private async Task<User?> Authenticate(UserLogin userLogin)
         {
-            if (userLogin.Email == "email@gmail.com" && userLogin.Password == "123")
+            var client = await _clientService.Login(userLogin.Email, userLogin.Password);
+            if (client is not null)
             {
                 return new User
                 {
-                    Name = "duy",
-                    Email = userLogin.Email,
-                    Password = userLogin.Password,
-                    Role = "user"
+                    Name = client.Name,
+                    Email = client.Email,
+                    Role = client.Role
                 };
             }
             return null;
